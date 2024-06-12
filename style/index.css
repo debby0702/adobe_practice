@@ -1,3 +1,85 @@
 @charset "utf-8";
 
+body, html {
+    height: 100%;
+    /* html高度由body決定。body高度由內容決定。 */
+    /* 想要內容在頁面置中，body, html高度就要調到100% */
+}
 
+body {
+    display: flex;
+    /* display:flex設置目的是要讓內容置中 */
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header {
+    text-align: center;
+}
+
+.header-img{
+    width: 50px;
+    height: auto;
+}
+
+
+.header-title {
+    color: #fa0f00;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-top: .5rem;
+}
+
+.nav {
+    margin-top: 2rem;
+}
+
+.nav-ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-li {
+    width: 33.3333%;
+}
+
+.nav-btn {
+    text-decoration: none;
+    text-transform: capitalize;
+    display: block;
+    text-align: center;
+    line-height: 100px;
+    background-color: rgb(57, 88, 88);
+    color: #fff;
+    text-shadow: #0000006e 1px 1px 5px;
+    transition-duration: .6s;
+}
+
+.nav-btn:hover{
+    opacity: .7;
+}
+
+.nav-btn-acrobat {
+    background-color: #333;
+}
+
+.nav-btn-premiere {
+    background-color: #dd1f8e;
+}
+
+.nav-btn-photoshop {
+    background-color: #00a7e2;
+}
+
+.nav-btn-after-effects {
+    background-color: #620294;
+}
+
+.nav-btn-illustrator {
+    background-color: #ee9a10;
+}
+
+.nav-btn-dreamweaver {
+    background-color: #84c922;
+}
