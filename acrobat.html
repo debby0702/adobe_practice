@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="./style/master.css">
     <link rel="stylesheet" href="./style/acrobat.css">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- CDNjs放css後面(先載排版的CSS資源，最後再載ICON資源) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <nav class="nav">
@@ -38,7 +40,56 @@
                 
             </p>
         </div>
-        <div class="article-body"></div>
+        <div class="article-body">
+            <div class="grid">
+                <!-- <a>點小圖跑出大圖 -->
+                <a href="./images/ac-1-lg.png" target="_blank">
+                    <div class="card">
+                        <div class="card-head">
+                            <!-- 放小圖 -->
+                            <img class="card-img" src="./images/ac-1-sm.png" width="250" height="141" alt="衍生自 PostScript 頁面描述語言的子集，用以生成和輸出圖形。" >
+                        </div>
+                        <div class="card-body">
+                            <!-- CDN放大鏡(記得使用同版本的CDN 5.15.4) -->
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./images/ac-2-lg.png" target="_blank">
+                    <div class="card">
+                        <div class="card-head">
+                            <img class="card-img" src="./images/ac-2-sm.png" width="250" height="141" alt="字型嵌入/替換系統，可使字型隨檔案一起傳輸。" >
+                        </div>
+                        <div class="card-body">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./images/ac-3-lg.png" target="_blank">
+                    <div class="card">
+                        <div class="card-head">
+                            <img class="card-img" src="./images/ac-3-sm.png" width="250" height="141" alt="結構化的儲存系統，用以綁定這些元素和任何相關內容到單個檔案，帶有適當的資料壓縮系統。" >
+                        </div>
+                        <div class="card-body">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./images/ac-4-lg.png">
+                    <div class="card">
+                        <div class="card-head">
+                            <img class="card-img" src="./images/ac-4-sm.png" width="250" height="141" alt="PDF 包含已標記和解析的 PostScript 原始碼，以在修改 PDF 頁面描述中的項與修改所產生的頁面造型之間直接保持一致。" >
+                        </div>
+                        <div class="card-body">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
