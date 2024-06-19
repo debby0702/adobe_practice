@@ -9,6 +9,10 @@
     margin-top: -116px;
 }
 
+.nav-active{
+    background-color:rgba(0,0,0,.3);
+}
+
 .nav-btn{
     background-color: #fff;
     display: block;
@@ -60,7 +64,6 @@
 /* 和flex一樣，做在外層(像是ul、li的關係) */
 .grid{
     display: grid;
-   
     gap: 1.5rem;
 }
 
@@ -144,5 +147,37 @@
     transform: scale(1);
 }
 
+@media screen and (max-width:1024px) {
+    .article {
+        /* 希望右側留白 */
+        width: 80%;
+    }
+}
 
 
+@media screen and (max-width:480px) {
+    .article {
+        /* 寬度最寬 */
+        width:auto;
+        padding: 4rem 2rem 2rem;
+    }
+
+    .nav {
+        top:0;
+        margin-top: 0 ;
+        left:0;
+        
+        display: flex;
+        /* 有用flex，寬度就會縮水，要用background color檢查寬度 */
+        /* background-color: #4aac4f; */
+        width: 100%;
+        justify-content: center;
+
+        /* 防止內容過多，出現擋住nav的問題 */
+        z-index: 10;
+    }
+
+    .article-head{
+        text-align: center;
+    }
+}
