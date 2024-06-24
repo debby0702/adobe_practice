@@ -77,13 +77,28 @@ function setScroll(){
     })
 }
 
+function setFancybox(){
+    // alert(33);
+    $grid.find("a").fancybox({
+        // 防按右鍵被下載
+        protect: true,
+        // 讓圖片循環(最後跳回第一張)
+        loop: true,
+    });
+    
+}
+
 function setInit(){
     setGrid();
 }
 
 function setEvent(){
     setScroll();
+    setFancybox();
 }
+
+
+
 
 setInit();
 setEvent();

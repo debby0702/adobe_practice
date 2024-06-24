@@ -30,6 +30,11 @@
     opacity: 1;
 }
 
+.nav-btn-active{
+    /* 點選當前網頁無動作、無手指 */
+    pointer-events: none;
+}
+
 .nav-btn-index{
     background-color: #000;
 }
