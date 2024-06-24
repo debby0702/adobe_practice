@@ -78,7 +78,6 @@ function setScroll(){
 }
 
 function setFancybox(){
-    // alert(33);
     $grid.find("a").fancybox({
         // 防按右鍵被下載
         protect: true,
