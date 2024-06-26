@@ -83,6 +83,42 @@ function setFancybox(){
         protect: true,
         // 讓圖片循環(最後跳回第一張)
         loop: true,
+        // 開啟、關閉時間
+        animationDuration:1000,
+        // 轉場時間(已經打開了)
+        transitionDuration:2000,
+        // 轉場效果 (滑鼠拖曳/手機/鍵盤/按鈕點擊都支援)
+        transitionEffect:'slide',
+        // 全螢幕，預設false
+        // fullScreen:{
+        //     autoStart:true,
+        // },
+        // 是否鎖住鍵盤操作，預設是true
+        keyboard:false,
+        // 分頁顯示，預設true
+        infobar:false,
+        // 顯示工具列，預設true
+        // toolbar:true,
+        // 顯示圖片旁的關閉鈕，預設false
+        smallBtn:true,
+        // 是否顯示箭頭按鈕，預設true
+        arrows:false,
+        // 自動轉場
+        slideShow:{
+            autoStart:true,
+            speed:5000,
+        },
+        // 顯示縮圖模式，預設true
+        thumbs:true,
+        // 媒體自動播放
+        media:{
+            youtube:{
+                params:{
+                    autoplay:false
+                }
+            },
+            // 除了YT，其他頻台影片也能操控
+        }
     });
     
 }
